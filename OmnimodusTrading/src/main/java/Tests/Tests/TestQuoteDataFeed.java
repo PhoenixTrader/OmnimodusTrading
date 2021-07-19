@@ -1,4 +1,4 @@
-package Tests;
+package Tests.Tests;
 
 import java.io.FileReader;
 import java.time.LocalDate;
@@ -6,20 +6,22 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Hashtable;
 import java.util.List;
-import org.jsoup.nodes.Document;
+import java.util.ArrayList;
+import java.util.*;
 
+import org.jsoup.nodes.Document;
 import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVParser;
 import com.opencsv.CSVReader;
 
-import CandleStick.CandleStick;
-import Connector.ConnectorGeneric;
-import QuoteDataFeed.QuoteDataFeed;
-import java.util.ArrayList;
-import OrderManagement.*;
-import java.util.*;
-import Quote.Quote;
+import DataLoader.CandleStick.CandleStick;
+import DataFeed.Connector.ConnectorGeneric;
+import DataFeed.QuoteDataFeed.QuoteDataFeed;
 
+import Infrastructure.AccountManagement.*;
+import Infrastructure.OrderManagement.*;
+import Infrastructure.Quote.Quote;
+import Infrastructure.Order.Order.*;
 
 public class TestQuoteDataFeed {
 	public static void BackTest() {
@@ -38,7 +40,7 @@ public class TestQuoteDataFeed {
 		double spread = 0.00000001;
 		//CSVParser parser = new CSVParserBuilder().withSeparator(',').withIgnoreQuotations(true).build();
 
-		var file = "E:/Projects/Algo Trading/Git/MonkeyTrading/HistoricalData/FX/minutely/BTCUSD1.csv"; // D:/MonkeyTrading/HistoricalData/Equity/minutely/test.csv
+		String file = "E:/Projects/Algo Trading/Git/MonkeyTrading/HistoricalData/FX/minutely/BTCUSD1.csv"; // D:/MonkeyTrading/HistoricalData/Equity/minutely/test.csv
 		int currentTick = 0;
 		
 		

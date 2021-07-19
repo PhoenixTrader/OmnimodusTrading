@@ -1,4 +1,4 @@
-package WebScraper;
+package DataFeed.WebScraper;
 
 
 public class CHttpRequesterTest {

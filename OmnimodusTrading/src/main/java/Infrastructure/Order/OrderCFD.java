@@ -1,7 +1,7 @@
-package Order;
+package Infrastructure.Order;
 import java.time.LocalDateTime;
-import QuoteDataFeed.*;
-import Quote.*;
+import DataFeed.QuoteDataFeed.*;
+import Infrastructure.Quote.*;
 
 public class OrderCFD extends Order
 {

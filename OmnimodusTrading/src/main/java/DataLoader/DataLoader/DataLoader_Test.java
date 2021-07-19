@@ -1,6 +1,6 @@
-package DataLoader;
+package DataLoader.DataLoader;
 
-import CandleStick.CandleStick;
+import DataLoader.CandleStick.CandleStick;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;

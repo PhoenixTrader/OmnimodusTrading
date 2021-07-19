@@ -1,15 +1,16 @@
 package _Main;
 
-import QuoteDataFeed.*;
-import Tests.*;
-import Tests.TestBackTester.*;
+import DataFeed.QuoteDataFeed.*;
+import Tests.Tests.*;
+import Tests.Tests.TestBackTester.*;
 import org.jsoup.select.Elements;
 
 import com.opencsv.CSVReader;
 
-import CandleStick.CandleStick;
-import Quote.*;
-import Connector.*;
+import DataLoader.CandleStick.CandleStick;
+import Infrastructure.Quote.*;
+import DataFeed.Connector.*;
+
 import java.io.*;
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
@@ -68,7 +69,7 @@ public class Main {
 	
 	else if (Test == "loadingCSV")
 	{
-		var file = "E:/Projects/Algo Trading/Git/MonkeyTrading/HistoricalData/FX/minutely/BTCUSD1.csv"; //  D:/MonkeyTrading/HistoricalData/Equity/minutely/test.csv
+		String file = "E:/Projects/Algo Trading/Git/MonkeyTrading/HistoricalData/FX/minutely/BTCUSD1.csv"; //  D:/MonkeyTrading/HistoricalData/Equity/minutely/test.csv
 		try {
 			  
 	        FileReader filereader = new FileReader(file);

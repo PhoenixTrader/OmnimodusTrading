@@ -1,4 +1,4 @@
-package Quote;
+package Infrastructure.Quote;
 
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;

@@ -1,4 +1,4 @@
-package Measures;
+package Strategies.Measures;
 
 //+------------------------------------------------------------------+
 //|   Interface that allows the flexible implementation of various   |

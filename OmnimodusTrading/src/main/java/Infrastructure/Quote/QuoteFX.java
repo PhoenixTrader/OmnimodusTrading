@@ -1,5 +1,5 @@
-package Quote;
-import Quote.*;
+package Infrastructure.Quote;
+import Infrastructure.Quote.*;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 

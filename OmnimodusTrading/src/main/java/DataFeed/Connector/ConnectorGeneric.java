@@ -1,4 +1,4 @@
-package Connector;
+package DataFeed.Connector;
 
 public class ConnectorGeneric {
 	

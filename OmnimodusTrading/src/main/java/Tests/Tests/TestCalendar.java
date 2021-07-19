@@ -1,4 +1,4 @@
-package Tests;
+package Tests.Tests;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -11,10 +11,10 @@ import org.jsoup.nodes.Document;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Multimap;
 
-import CalendarFeed.ForexFactoryCalendarData;
-import CalendarFeed.GetCalendar;
-import CalendarFeed.GetCalendarTimeSpan;
-import CalendarFeed.GetForexFactoryCalendarPage;
+import DataFeed.CalendarFeed.ForexFactoryCalendarData;
+import DataFeed.CalendarFeed.GetCalendar;
+import DataFeed.CalendarFeed.GetCalendarTimeSpan;
+import DataFeed.CalendarFeed.GetForexFactoryCalendarPage;
 
 public class TestCalendar {
 

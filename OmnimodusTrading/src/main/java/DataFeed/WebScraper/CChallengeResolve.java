@@ -1,4 +1,4 @@
-package WebScraper;
+package DataFeed.WebScraper;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +19,7 @@ public class CChallengeResolve {
 
 	  public Map<String, String> getPathParams(Document response, String domain)
 	      throws ScriptException {
-	    Map<String, String> paramMap = new HashMap<>();
+	    Map<String, String> paramMap = new HashMap<String, String>();
 	    paramMap.put(CHALLENGE_1_KEY,
 	        response.getElementsByAttributeValue("name", CHALLENGE_1_KEY).val());
 	    paramMap.put(CHALLENGE_2_KEY,

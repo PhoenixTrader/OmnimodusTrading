@@ -1,1 +1,1 @@
-package Tests;
+package Tests.Tests;

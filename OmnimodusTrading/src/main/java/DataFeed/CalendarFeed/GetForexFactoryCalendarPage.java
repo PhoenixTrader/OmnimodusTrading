@@ -1,4 +1,4 @@
-package CalendarFeed;
+package DataFeed.CalendarFeed;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -9,7 +9,7 @@ import javax.script.ScriptException;
 
 import org.jsoup.nodes.Document;
 
-import WebScraper.CHttpRequester;
+import DataFeed.WebScraper.CHttpRequester;
 
 public class GetForexFactoryCalendarPage {
 

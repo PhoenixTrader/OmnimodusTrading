@@ -1,4 +1,4 @@
-package WebScraper;
+package DataFeed.WebScraper;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

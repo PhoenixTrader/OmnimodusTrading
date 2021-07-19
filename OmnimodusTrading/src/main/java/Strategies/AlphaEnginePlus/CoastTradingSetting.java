@@ -1,4 +1,4 @@
-package AlphaEnginePlus;
+package Strategies.AlphaEnginePlus;
 
 import java.util.ArrayList;
 

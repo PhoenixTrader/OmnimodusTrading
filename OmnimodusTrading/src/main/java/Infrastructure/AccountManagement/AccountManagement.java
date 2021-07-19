@@ -1,7 +1,7 @@
-package AccountManagement;
+package Infrastructure.AccountManagement;
 
-import OrderManagement.*;
-import QuoteDataFeed.*;
+import Infrastructure.OrderManagement.*;
+import DataFeed.QuoteDataFeed.*;
 
 public class AccountManagement {
 

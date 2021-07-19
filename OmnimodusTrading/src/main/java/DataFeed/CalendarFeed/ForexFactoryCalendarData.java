@@ -1,4 +1,4 @@
-package CalendarFeed;
+package DataFeed.CalendarFeed;
 
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ public class ForexFactoryCalendarData extends GetForexFactoryCalendarPage
 	//Create lists
 	public List<String> GetEventList() {      
 		
-	List<String> eventList = new ArrayList<>();
+	List<String> eventList = new ArrayList<String>();
 		Elements events = this.fullHTMLPage.select("td.calendar__event");
 		for (Element event : events){
 			eventList.add(event.text());
@@ -46,7 +46,7 @@ public class ForexFactoryCalendarData extends GetForexFactoryCalendarPage
 	
 	public List<String> GetCurrenciesList() {		
 		
-		List<String> currencyList = new ArrayList<>();
+		List<String> currencyList = new ArrayList<String>();
 		Elements currencies = this.fullHTMLPage.select("td.calendar__currency");
 		for (Element currency : currencies){
 			currencyList.add(currency.text());
@@ -56,7 +56,7 @@ public class ForexFactoryCalendarData extends GetForexFactoryCalendarPage
 	
 	public List<String> GetTimeList() {		
 		
-		List<String> timeList = new ArrayList<>();
+		List<String> timeList = new ArrayList<String>();
 		Elements times = this.fullHTMLPage.select("td.calendar__time");
 		for (Element time : times){
 			String StringTime = time.text();
@@ -68,7 +68,7 @@ public class ForexFactoryCalendarData extends GetForexFactoryCalendarPage
 	
 		
     public List<ZonedDateTime> zonedDatetime(LocalDate localDate, List<String> listCalendarTime, String zoneID){
-    	List<ZonedDateTime> calendarDateTimes = new ArrayList<>();	
+    	List<ZonedDateTime> calendarDateTimes = new ArrayList<ZonedDateTime>();	
     	ZonedDateTime calendarTime;
 		for (int i = 0; i < listCalendarTime.size(); i++) {
 			String checker = listCalendarTime.get(i);
@@ -105,7 +105,7 @@ public class ForexFactoryCalendarData extends GetForexFactoryCalendarPage
 		
 	public List<String> GetActualList() {
 		
-		List<String> actualList = new ArrayList<>();
+		List<String> actualList = new ArrayList<String>();
 		Elements actuals = this.fullHTMLPage.select("td.calendar__actual");
 		for (Element actual : actuals){
 			actualList.add(actual.text());
@@ -115,7 +115,7 @@ public class ForexFactoryCalendarData extends GetForexFactoryCalendarPage
 	
 	public List<String> GetImpactList() {	
 	
-		List<String> impactList = new ArrayList<>();
+		List<String> impactList = new ArrayList<String>();
 		Elements impacts = this.fullHTMLPage.select("span");
 		for (Element impact : impacts){
 			impactList.add(impact.text());

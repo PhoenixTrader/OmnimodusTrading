@@ -1,1 +1,1 @@
-package Measures;
+package Strategies.Measures;

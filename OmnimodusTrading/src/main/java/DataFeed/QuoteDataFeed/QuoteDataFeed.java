@@ -1,6 +1,6 @@
-package QuoteDataFeed;
-import Connector.*;
-import Quote.*;
+package DataFeed.QuoteDataFeed;
+import DataFeed.Connector.*;
+import Infrastructure.Quote.*;
 
 import java.util.HashMap;
 import java.util.Map;

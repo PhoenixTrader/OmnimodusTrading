@@ -1,7 +1,7 @@
-package AlphaEnginePlus;
+package Strategies.AlphaEnginePlus;
 
-import QuoteDataFeed.*;
-import Measures.*;
+import DataFeed.QuoteDataFeed.*;
+import Strategies.Measures.*;
 
 //+------------------------------------------------------------------+
 //|   The local liquidity class, the liquidity for a single          |

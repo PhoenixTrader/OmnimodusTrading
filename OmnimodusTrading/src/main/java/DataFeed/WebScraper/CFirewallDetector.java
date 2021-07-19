@@ -1,4 +1,4 @@
-package WebScraper;
+package DataFeed.WebScraper;
 
 import org.jsoup.nodes.Document;
 

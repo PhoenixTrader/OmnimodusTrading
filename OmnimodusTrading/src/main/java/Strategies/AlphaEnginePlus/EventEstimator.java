@@ -1,11 +1,11 @@
-package AlphaEnginePlus;
+package Strategies.AlphaEnginePlus;
+
+import Strategies.Measures.iMeasure;
+import DataFeed.QuoteDataFeed.*;
+import Infrastructure.Quote.*;
 
 import java.io.*;
 import java.time.ZonedDateTime;
-
-import Measures.iMeasure;
-import QuoteDataFeed.*;
-import Quote.*;
 
 public class EventEstimator {
 	private String symbol;

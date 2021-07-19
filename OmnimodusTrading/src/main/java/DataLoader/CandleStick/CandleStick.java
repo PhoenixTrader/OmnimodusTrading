@@ -1,7 +1,7 @@
-package CandleStick;
+package DataLoader.CandleStick;
 
 
-import Quote.*;
+import Infrastructure.Quote.*;
 import java.io.Serializable;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;

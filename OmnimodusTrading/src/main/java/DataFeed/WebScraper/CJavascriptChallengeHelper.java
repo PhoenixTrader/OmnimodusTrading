@@ -1,4 +1,4 @@
-package WebScraper;
+package DataFeed.WebScraper;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

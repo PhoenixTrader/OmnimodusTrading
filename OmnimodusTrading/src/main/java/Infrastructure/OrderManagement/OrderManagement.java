@@ -5,10 +5,11 @@
 //#                                                                             #
 //###############################################################################
 
-package OrderManagement;
+package Infrastructure.OrderManagement;
 
-import Order.*;
-import QuoteDataFeed.*;
+import Infrastructure.Order.*;
+import DataFeed.QuoteDataFeed.*;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.ArrayList;

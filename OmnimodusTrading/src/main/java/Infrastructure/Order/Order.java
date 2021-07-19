@@ -1,11 +1,12 @@
-package Order;
+package Infrastructure.Order;
 
-import Quote.Quote;
-import java.io.*;
-import java.util.*;
-import QuoteDataFeed.QuoteDataFeed;
+import Infrastructure.Quote.Quote;
+import DataFeed.QuoteDataFeed.QuoteDataFeed;
+
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.io.*;
+import java.util.*;
 
 public class Order implements Cloneable{
 	private String assetClass;

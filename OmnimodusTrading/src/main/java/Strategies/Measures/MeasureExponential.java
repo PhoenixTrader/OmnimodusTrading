@@ -1,4 +1,4 @@
-package Measures;
+package Strategies.Measures;
 
 //+------------------------------------------------------------------+
 //|   Exponential change.                                            |

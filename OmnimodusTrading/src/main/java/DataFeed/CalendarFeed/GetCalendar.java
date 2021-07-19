@@ -1,4 +1,4 @@
-package CalendarFeed;
+package DataFeed.CalendarFeed;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,7 +23,7 @@ import org.jsoup.select.Elements;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 
-import WebScraper.*;
+import DataFeed.WebScraper.*;
 
 public class GetCalendar {
 	
@@ -144,7 +144,7 @@ public class GetCalendar {
 		
 	public List<String> GetEventList(Document fullHTMLPage) {      
 		
-		List<String> eventList = new ArrayList<>();
+		List<String> eventList = new ArrayList<String>();
 		Elements events = fullHTMLPage.select("td.calendar__event");
 		for (Element event : events){
 			eventList.add(event.text());
@@ -154,7 +154,7 @@ public class GetCalendar {
 	
 	public List<String> GetCurrenciesList(Document websiteData) {		
 		
-		List<String> currencyList = new ArrayList<>();
+		List<String> currencyList = new ArrayList<String>();
 		Elements currencies = websiteData.select("td.calendar__currency");
 		for (Element currency : currencies){
 			currencyList.add(currency.text());
@@ -164,7 +164,7 @@ public class GetCalendar {
 	
 	public List<String> GetTimeList(Document websiteData) {		
 		
-		List<String> timeList = new ArrayList<>();
+		List<String> timeList = new ArrayList<String>();
 		Elements times = websiteData.select("td.calendar__time");
 		for (Element time : times){
 			String StringTime = time.text();
@@ -176,7 +176,7 @@ public class GetCalendar {
 	
 	public List<String> GetActualList(Document websiteData) {
 		
-		List<String> actualList = new ArrayList<>();
+		List<String> actualList = new ArrayList<String>();
 		Elements actuals = websiteData.select("td.calendar__actual");
 		for (Element actual : actuals){
 			actualList.add(actual.text());
@@ -186,7 +186,7 @@ public class GetCalendar {
 	
 	public List<String> GetImpactList(Document websiteData) {	
 	
-		List<String> impactList = new ArrayList<>();
+		List<String> impactList = new ArrayList<String>();
 		Elements impacts = websiteData.select("span");
 		for (Element impact : impacts){
 			impactList.add(impact.text());
@@ -273,7 +273,7 @@ public class GetCalendar {
 		List<String> daysCurrencies = GetCurrenciesList(fullHTMLPage); 
 		List<String> daysActuals = GetActualList(fullHTMLPage);
 		List<String> daysTime = GetTimeList(fullHTMLPage);
-		List<String> calendarDateTimes = new ArrayList<>();
+		List<String> calendarDateTimes = new ArrayList<String>();
 		String calendarTime;
 		for (int i = 0; i < daysTime.size(); i++) {
 			String checker = daysTime.get(i);
@@ -329,7 +329,7 @@ public class GetCalendar {
 		List<String> daysCurrencies = GetCurrenciesList(fullHTMLPage); 
 		List<String> daysActuals = GetActualList(fullHTMLPage);
 		List<String> daysTime = GetTimeList(fullHTMLPage);
-		List<String> calendarDateTimes = new ArrayList<>();
+		List<String> calendarDateTimes = new ArrayList<String>();
 		String calendarTime;
 		for (int i = 0; i < daysTime.size(); i++) {
 			String checker = daysTime.get(i);

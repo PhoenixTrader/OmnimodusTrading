@@ -1,15 +1,18 @@
-package AlphaEnginePlus;
+package Strategies.AlphaEnginePlus;
 
-import QuoteDataFeed.*;
-import OrderManagement.*;
+import DataFeed.QuoteDataFeed.*;
+import Infrastructure.OrderManagement.*;
+
+import Strategies.AlphaEnginePlus.*;
+
+import Strategies.Measures.*;
+import Infrastructure.Order.Order;
 
 import java.util.Arrays;
 import java.util.Map;
 import java.util.ArrayList;
 import java.util.*;
 
-import Measures.*;
-import Order.Order;
 
 //+------------------------------------------------------------------+
 //|   The class that combines the coast trading strategies.          |

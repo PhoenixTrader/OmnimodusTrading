@@ -1,1 +1,1 @@
-package Quote;
+package Infrastructure.Quote;

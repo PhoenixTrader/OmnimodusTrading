@@ -1,1 +1,1 @@
-package AccountManagement;
+package Infrastructure.AccountManagement;

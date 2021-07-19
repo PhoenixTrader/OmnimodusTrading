@@ -1,10 +1,12 @@
-package AlphaEnginePlus;
+package Strategies.AlphaEnginePlus;
+
+import DataFeed.QuoteDataFeed.*;
+import Infrastructure.OrderManagement.*;
+import Strategies.Measures.*;
+import Infrastructure.Order.*;
 
 import java.util.*;
-import QuoteDataFeed.*;
-import OrderManagement.*;
-import Measures.*;
-import Order.Order;
+import java.util.ArrayList;
 
 public class CoastTrading {
 	// +------------------------------------------------------------------+
@@ -117,13 +119,16 @@ public class CoastTrading {
 
 		// --- event status booleans - these tell where we calculate the events with
 		this.estimatorStatus = true;
-		this.estimatorDownStatus = new ArrayList<>(Arrays.asList(false, false));
-		this.estimatorUpStatus = new ArrayList<>(Arrays.asList(false, false));
+		this.estimatorDownStatus = new ArrayList<Boolean>(Arrays.asList(false, false));
+		this.estimatorUpStatus = new ArrayList<Boolean>(Arrays.asList(false, false));
 
 		this.eEstimator = new EventEstimator(this.underlying, dUp, dDown, dStarUp, dStarDown, quoteDataFeed);
 		// --- event estimators for skewed positions
-		eEstimatorDown = new ArrayList<EventEstimator>(Arrays.asList(null, null));
-		eEstimatorUp = new ArrayList<EventEstimator>(Arrays.asList(null, null));
+		//eEstimatorDown = new ArrayList<EventEstimator>(Arrays.asList(null, null));
+		//eEstimatorUp = new ArrayList<EventEstimator>(Arrays.asList(null, null));
+		
+		eEstimatorDown = new ArrayList<EventEstimator>(Arrays.asList(new EventEstimator(), new EventEstimator()));
+		eEstimatorUp = new ArrayList<EventEstimator>(Arrays.asList(new EventEstimator(), new EventEstimator()));
 		
 		this.eEstimatorDown.set(0, new EventEstimator(this.underlying, 0.75 * dUp, 1.50 * dDown, 0.75 * dStarUp,
 				0.75 * dStarUp, quoteDataFeed));

@@ -1,1 +1,1 @@
-package QuoteDataFeed;
+package DataFeed.QuoteDataFeed;
