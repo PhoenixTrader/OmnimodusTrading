@@ -77,7 +77,7 @@ public class TestBackTester {
 
 
 
-			Map<String, ArrayList<Order.Order>> ordersFromStrategy;
+			Map<String, ArrayList<Order>> ordersFromStrategy;
 			while ((nextRecord = csvReader.readNext()) != null) {
 				if (currentTick >= tickLimit) {
 					break;

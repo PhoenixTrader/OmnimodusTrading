@@ -1,4 +1,4 @@
-package BacktesterProp;
+package API.BacktesterProp;
 
 public class BacktesterOmnimodus {
 

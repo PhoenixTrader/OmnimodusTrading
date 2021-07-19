@@ -1,4 +1,4 @@
-package _Main;
+package main;
 
 import DataFeed.QuoteDataFeed.*;
 import Tests.Tests.*;
